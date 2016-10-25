@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <GridLayout
+        android:layout_width="222dp"
+        android:layout_height="230dp"
+        android:layout_row="0"
+        android:layout_column="0">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/conversationSearchName"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="16dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/conversationSearchDate"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="16dp"
+                android:gravity="center" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/scrollView2" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/sMessageText"
+                    android:gravity="center" />
+            </ScrollView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="43dp"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Prev"
+                    android:id="@+id/conversationPreviousButton"
+                    android:layout_row="0"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:id="@+id/conversationNextButton"
+                    android:layout_row="0"
+                    android:layout_column="2" />
+
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

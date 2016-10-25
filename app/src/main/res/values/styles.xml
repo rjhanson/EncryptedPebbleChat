@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:homeAsUpIndicator">@mipmap/ic_launcher_2</item>
+        <!--
+        <item name="android:actionMenuTextColor">@style/MyActionBarTitleText</item>
+        <item name="actionMenuTextColor">@style/MyActionBarTitleText</item>
+        -->
+
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#99cc00</item>
+        <item name="background">@color/ss_chat</item>
+        <!--
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        -->
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

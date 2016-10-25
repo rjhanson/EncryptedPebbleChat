@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:touchscreenBlocksFocus="false"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView android:text="@string/SunstoneChat" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:textSize="@dimen/abc_action_bar_stacked_max_height"
+        android:gravity="center"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailForm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:textColor="#ff9b9595"
+        android:autoText="false"
+        android:hint="@string/userForm"
+        android:gravity="center"
+        android:importantForAccessibility="yes" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordForm"
+        android:layout_alignTop="@+id/emailForm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:password="false"
+        android:hint="@string/passwordForm"
+        android:gravity="center"
+        android:importantForAccessibility="yes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signInButton"
+        android:id="@+id/submitButton"
+        android:onClick="onSubmitLogin"
+        android:layout_below="@+id/passwordForm"
+        android:layout_alignLeft="@+id/passwordForm"
+        android:layout_alignStart="@+id/passwordForm"
+        android:layout_alignRight="@+id/passwordForm"
+        android:layout_alignEnd="@+id/passwordForm" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/emailForm"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/loginMessageBox"
+            android:layout_row="12"
+            android:layout_column="0"
+            android:textColor="#ffff3d24"
+            android:autoText="false"
+            android:background="@drawable/abc_ab_share_pack_holo_light"
+            android:visibility="invisible"
+            android:gravity="center" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerHere"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:onClick="onRegisterHereClick"
+        android:inputType="textNoSuggestions"
+        android:clickable="true" />
+
+</RelativeLayout>

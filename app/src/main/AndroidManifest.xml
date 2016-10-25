@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssuser.ss.sunstonechat" >
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ssuser.ss.sunstonechat.LoginActivity"/>
+        </activity>
+        <activity
+            android:name=".ContactListActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ssuser.ss.sunstonechat.ContactListActivity" />
+        </activity>
+        <activity
+            android:name=".NewMessageActivity"
+            android:parentActivityName=".ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ssuser.ss.sunstonechat.ContactListActivity" />
+        </activity>
+        <activity
+            android:name=".NewContactCreateActivity"
+            android:parentActivityName=".ContactListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ssuser.ss.sunstonechat.ContactListActivity" />
+        </activity>
+
+        <receiver
+            android:name=".SMSReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_SENT" />
+                <action android:name="android.provider.Telephony.SMS_DELIVERED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ConversationActivity"
+            android:parentActivityName=".ContactListActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

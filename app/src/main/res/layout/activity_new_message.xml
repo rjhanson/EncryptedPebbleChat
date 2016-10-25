@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:touchscreenBlocksFocus="false"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.ssuser.ss.sunstonechat.NewMessageActivity">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newMessageGrid">
+
+        <Space
+            android:layout_width="291dp"
+            android:layout_height="41dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/toEmailForm"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:hint="@string/toEmailForm"
+            android:textSize="22sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:id="@+id/newMessageContainer"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="22dp"
+            android:gravity="top"
+            android:background="@drawable/custom_bg_2"
+            android:imeOptions="actionSend"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+    </GridLayout>
+</RelativeLayout>

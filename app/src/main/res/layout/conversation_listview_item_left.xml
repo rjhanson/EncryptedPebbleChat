@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/searchIndex"
+        android:layout_gravity="left|top"
+        android:src="@mipmap/ic_action_next_item"
+        android:layout_alignBottom="@+id/messageDate"
+        android:layout_toLeftOf="@+id/messageBody"
+        android:layout_toStartOf="@+id/messageBody"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageBody"
+        android:background="@drawable/rounded_corner_gold_msg"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textSize="16dp"
+        android:paddingRight="10dp"
+        android:height="50dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:id="@+id/messageDate"
+        android:gravity="bottom|right"
+        android:background="@drawable/rounded_corner_gold_date"
+        android:layout_below="@+id/messageBody"
+        android:layout_alignLeft="@+id/messageBody"
+        android:layout_alignStart="@+id/messageBody"
+        android:textSize="12dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp" />
+</RelativeLayout>

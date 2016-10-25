@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/conversation_layout">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageBody"
+        android:textSize="16dp"
+        android:background="@drawable/rounded_corner_orange_msg"
+        android:layout_weight="0.04"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:height="50dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:id="@+id/messageDate"
+        android:textSize="12dp"
+        android:background="@drawable/rounded_corner_orange_date"
+        android:layout_weight="0.04"
+        android:layout_below="@+id/messageBody"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="16dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:autoText="false" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:rotation="180"
+        android:id="@+id/searchIndex"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/ic_action_next_item"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/messageDate"
+        android:layout_toRightOf="@+id/messageBody"
+        android:layout_toEndOf="@+id/messageBody" />
+
+</RelativeLayout>

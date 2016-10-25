@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BeatPoet</string>
+
+    <string name="submitButton">Submit</string>
+
+    <!-- Login Activity -->
+        <string name="SunstoneChat">BeatPoet</string>
+        <string name="emailForm">Email:</string>
+        <string name="userForm">Username:</string>
+        <string name="passwordForm">Password:</string>
+        <string name="loginMessageBox"></string>
+        <string name="signInButton">Sign In</string>
+
+    <!-- Register Activity -->
+        <string name="registerTitle">Register</string>
+        <string name="usernameRegister">Username:</string>
+        <string name="emailRegister">Email:</string>
+        <string name="phoneRegister">Phone Number:</string>
+        <string name="passwordRegister">Password:</string>
+        <string name="passwordHintRegister">Password</string>
+        <string name="usernameHintRegister">Username</string>
+        <string name="emailHintRegister">Email</string>
+        <string name="phoneHintRegister">Phone Number</string>
+        <string name="registerButton">Register</string>
+
+    <!-- Home Activity -->
+        <string name="welcomeTitle">BeatPoet</string>
+        <string name="byWho">from Sunstone</string>
+        <string name="messageOverViewTitle">Message Overview</string>
+        <string name="messageListView"></string>
+        <string name="messageNewBtn">New Message</string>
+        <string name="contactListBtn">Add Contact</string>
+
+    <!-- New Message Activity -->
+        <string name="newMessageTitle">New Message</string>
+        <string name="toEmailForm">To:</string>
+        <string name="newMessageContainer"></string>
+        <string name="sendMessageButton">Send Message</string>
+
+    <!-- Contact List Activity -->
+        <string name="contactListTitle">Contact List</string>
+        <string name="contactListContainer"></string>
+        <string name="createNewBtn">Compose</string>
+        <string name="deleteBtn">Delete</string>
+        <string name="conversationsOverview">Contacts</string>
+
+    <!-- New Contact Activity -->
+        <string name="newContactTitle">New Contact</string>
+        <string name="newContactBox"></string>
+        <string name="nameForm"></string>
+        <string name="ssidForm"></string>
+
+    <string name="contactWelcome">Contacts</string>
+    <string name="newMsgWelcome">New Message</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_new_message">NewMessageActivity</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="title_activity_new_contact_create">NewContactCreateActivity</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+</resources>
